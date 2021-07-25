@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+:root {
+    --paddingsection: 60px 0;
+    --marginelemtos: 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    overflow: hidden;
+    padding: var(--paddingsection);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(252, 250, 248);
+   
+}
+
+
+p {
+    max-block-size: 100%;
+}
+
+/* Menu */
+
+.menu-navegacao {
+    padding: 0;
+    display: flex;
+    background-color: rgb(12, 7, 2);
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    width: 100%;
+}
+
+.enlaces li { 
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.enlaces a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(207, 207, 203);;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.enlaces a:hover {
+    background: rgb(83, 83, 83);
+}
+
+
+.apresentacao {
+    height: 450px;
+    background-image: url(img/img-principal.jpeg) ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);     
+}
+
+.container-texto {
+    padding: 0;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    color: rgb(10, 7, 0);
+}
+
+.apresentacao-item1 {
+    margin: 40px;
+    font-size: 30px;
+    font-weight: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apresentacao-item2 {
+    margin: 30px;
+    font-size: 50px;  
+    font-weight: 700px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.apresentacao-item3 {
+    font-size: 40px;  
+    font-weight: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*conteudo Principal*/
+
+.titulo {
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+}
+.conteudo-sobre {
+    width: 95%;
+    height: 450px;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imagem__1 {   
+    display: flex;
+    border-radius: 50% 00% 50% 50%;
+    height: 400px;
+    box-shadow: 2px 2px 2px rgba(15, 15, 15, 0.2);
+}
+.imagem__1:hover {
+    background: rgb(218, 214, 214);
+}
+
+/*projetos*/
+
+.projetos {
+    background-color:rgb(218, 214, 214);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);  
+}
+
+
+.conteiner-imagem {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   margin: 20px; 
+}
+.conteiner-imagem img {
+    display: block;
+    box-shadow: 0 0 8px rgb(0 0 0 .4);
+}
+
+.imagem__3 {
+    width: 500px;
+}
+/* outros Proyectos*/
+
+.outros {
+    padding: 30px;
+    background-color: #B3A298;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);  
+}
+
+.imagem-outros {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ 
+    margin: 20px;
+}
+
+.imagem-outro img {
+    display: block;  
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 0 8px rgb(0 0 0 .4);
+}
+
+.outro-img1 {
+    width: 400px;
+    height: 400px;
+}
+
+/*Rodape*/
+footer {
+    background-image: url(img/contacto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    height: 500px;
+    box-shadow: rgba(0,0,0,0.5);
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background:  rgba(0,0,0,0.4);
+    padding: 10px 20px;  
+    margin-top: 20px;
+    border-radius: 7px;  
+}
+
+.titulo-contacto {
+    padding: 20px;
+    color: seashell;
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    min-height: 100px;
+    max-width: 100%;
+}
+
+#boton {
+    background: #9c8f88;
+    color:  seashell;
+    padding: 20px;
+}
+#boton:hover {
+    cursor: pointer;
+}
+
+.copy {
+    background-color: black;
+    
+}
+
+.copy-info {
+    color: blanchedalmond;
+}
+@media (max-width:480px) {
+    form {
+        width: 100%;
+    }
+}
+
+@media  (max-width:800px) {
+
+}
+
+
+
+
+
+
+
+
+
