@@ -4,7 +4,38 @@
     text-decoration: none;
     box-sizing: border-box;
     line-height: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
 }
+
+.social {
+    position: fixed;
+    left: 20px;
+    top: 300px;
+    z-index: 2000;
+  }
+
+ .social ul {
+      list-style: none;
+  }
+ 
+  .social ul li a {
+      display: inline-block;
+      color: #fff;
+      background: #000;
+      padding: 10px 15px;
+      text-decoration: none;
+      -webkit-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      transition: all 500ms ease;
+  }
+
+.social ul li a:hover {
+    padding: 10px 30px;
+    
+}
+
 :root {
     --paddingsection: 60px 0;
     --marginelemtos: 40px;
@@ -26,6 +57,8 @@ body {
 
 
 p {
+    font-size: 18px;
+    text-align: center;
     max-block-size: 100%;
 }
 
@@ -34,7 +67,7 @@ p {
 .menu-navegacao {
     padding: 0;
     display: flex;
-    background-color: rgb(12, 7, 2);
+    background-color: rgb(241, 237, 232);
     justify-content: center;
     align-items: center;
     height: 5%;
@@ -52,7 +85,7 @@ p {
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
-    color: rgb(207, 207, 203);;
+    color: rgb(19, 19, 2);;
     padding-left: 10px;
     text-transform: uppercase;
 }
@@ -64,7 +97,7 @@ p {
 
 .apresentacao {
     height: 450px;
-    background-image: url(img/img-principal.jpeg) ;
+    background-image: url(img/contacto.jpg) ;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -78,25 +111,25 @@ p {
     flex-direction: column;
     align-items: center;    
     justify-content: center;
-    color: rgb(10, 7, 0);
+    color: rgb(245, 240, 230);
 }
 
 .apresentacao-item1 {
-    margin: 40px;
+    margin: 30px;
     font-size: 30px;
     font-weight: 700px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .apresentacao-item2 {
-    margin: 30px;
-    font-size: 50px;  
+    margin: 20px;
+    font-size: 40px;  
     font-weight: 700px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .apresentacao-item3 {
-    font-size: 40px;  
+    font-size: 25px;  
     font-weight: 700px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 /*conteudo Principal*/
@@ -108,10 +141,7 @@ p {
     text-transform: uppercase;
 }
 
-p {
-    font-size: 18px;
-    text-align: center;
-}
+
 .conteudo-sobre {
     width: 95%;
     height: 450px;
@@ -135,23 +165,33 @@ p {
 
 .projetos {
     background-color:rgb(218, 214, 214);
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);  
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5); 
+ 
 }
-
 
 .conteiner-imagem {
    display: flex;
-   justify-content: space-evenly;
-   flex-wrap: wrap;
-   margin: 20px; 
-}
-.conteiner-imagem img {
-    display: block;
-    box-shadow: 0 0 8px rgb(0 0 0 .4);
+   justify-content: center ;
+   margin-left: 20%; 
+
 }
 
-.imagem__3 {
-    width: 500px;
+.boton {
+    background: #9c8f88;
+    color:  seashell;
+    border-width: 0px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none ;
+}
+
+.boton {
+    position: relative;
+    top: 300px;
+    right: 290px;
 }
 /* outros Proyectos*/
 
@@ -165,8 +205,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
- 
-    margin: 20px;
+
 }
 
 .imagem-outro img {
@@ -181,13 +220,30 @@ p {
     height: 400px;
 }
 
-/*Rodape*/
+.imagem-outros-info1 {
+    position: relative;
+    top: 10px;
+    right: 50px;
+}
+
+.imagem-outros-info2 {
+    position: relative;
+    top: 10px;
+    right: 30px;
+}
+
+.imagem-outros-info3 {
+    position: relative;
+    top: 10px;
+    left:20px;
+}
+/*Formulario*/
 footer {
     background-image: url(img/contacto.jpg);
     background-size: cover;
     background-attachment: fixed;
     margin: 0px;
-    height: 500px;
+    height: 550px;
     box-shadow: rgba(0,0,0,0.5);
 }
 
@@ -197,7 +253,8 @@ form {
     background:  rgba(0,0,0,0.4);
     padding: 10px 20px;  
     margin-top: 20px;
-    border-radius: 7px;  
+    border-radius: 7px; 
+    color:white 
 }
 
 .titulo-contacto {
@@ -219,6 +276,7 @@ textarea {
     min-height: 100px;
     max-width: 100%;
 }
+
 
 #boton {
     background: #9c8f88;
@@ -246,11 +304,6 @@ textarea {
 @media  (max-width:800px) {
 
 }
-
-
-
-
-
 
 
 

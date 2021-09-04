@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Css</title>      
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="fonts.css">
+   
 </head>
-<body>
+<body>    
+    
+    <div class="social">
+        
+        <ul>
+            <li><a href="https://www.facebook.com/rina.velasquez.9275" class="icon-facebook2"></a></li>
+            <li><a href="https://www.instagram.com/rina.velasquez.9275/" class="icon-instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/rina-velasquez-405a711aa/" class="icon-linkedin"></a></li>
+        </ul>
+    </div>
     <!-- Menu-->
     <header>`
           <nav class="menu-navegacao container">
               
             <ul class="enlaces"> 
-               <li><a href="#">Quem Sou</a></li>
-               <li><a href="#">Meu Projetos</a></li>
-               <li><a href="#">Outros Projetos</a></li>
-               <li><a href="#">Contacto</a></li>
+               <li><a href="#Quem sou">Quem Sou</a></li>
+               <li><a href="#Meu Projetos">Meu Projetos</a></li>
+               <li><a href="#Outros Projetos">Outros Projetos</a></li>
+               <li><a href="#Contacta-me">Contacta-me</a></li>
            </ul>
          </nav> 
          <section class="apresentacao">
@@ -28,6 +38,8 @@
     </div>
     </section>
     </header>    
+    
+
 
      <!-- Conteudo principal-->
 <main>
@@ -35,7 +47,7 @@
      <div class="conteudo-sobre">
          <img src="img/rinvel0.png"  class="imagem__1" alt="">
          <div class="texto-sobre">
-             <h1 class="titulo">Quem Sou</h1>
+             <h1 class="titulo" id="Quem Sou">Quem Sou</h1>
              <p>Olá, meu nome é RINA VELASQUEZ, sou venezuelana,atualmente moro em Manaus-Brasil.</p>
              <P> Estude Administrão Financeira, mas hoje, empreendo novos rumos:</P>
              <p>Eu estudou o desenvolvimento de uma página web.</p>
@@ -49,29 +61,28 @@
     <!-- projetos -->
      <section class="projetos">
             <div class="container">
-            <h2 class="titulo"> Meu Projetos</h2>
+            <h2 class="titulo" id="Meu Projetos"> Meu Projetos</h2>
             <p class="descricao">Elaboraçao do Templete, para o aplicação de comandos e códigos HTML</p>
                 <div class="conteiner-imagem">
-                
                 <a href="https://github.com/rinvel7/Ejerc06-TEMPLETE1">
-                <img src="img/Prac. Templete.png" width="400px" alt="foto-templete-pratica" class="Imagem__2"></a>   
-                
-                <a href="https://github.com/rinvel7/Ejec.4-RECEITA">
-                <img src="img/receita-html.jpg"  alt="foto-receita-pratica" class="imagem__3"></a>
-                 </div>  
+                <img src="img/Prac. Templete.png" width="400px" alt="foto-templete-pratica" class="Imagem__2"></a> 
+                <button class="boton"><a href="https://rinvel7.github.io/Ejerc06-TEMPLETE1/"> <p>PRENCHA AQUI</p> </a></button>  
+             </div>  
         </section>
 
          <!-- outros-->
        <section class="outros">
            <div class="outros-Mais">
-            <h2 class="titulo">Outros Projetos</h2>
-            <p>Outros projetos audiovisuales de meu propia auoria (produçao e desenho).</p>  
+            <h2 class="titulo" id="Outros Projetos">Outros Projetos</h2>
+            <p>Outros projetos audiovisuales de meu propia autoria (produçao e desenho).</p>  
             <div class="imagem-outros">   
             <img src="img/Post Instagram.jpg"  alt="Post Instagram" class="outro-img1">
             <video src="video/Reel Instagram.mp4"  muted controls autoplay alt="Reel Instagram" class="outro-img1"></video>
             <a href="https://www.facebook.com/noesbrechaladistancia/?ref=pages_you_manage">
             <img src="img/blogpessoal.png" width="300" height="400" alt="foto-blog-pessoal"></a>
-                          
+              <span class="imagem-outros-info1"> Curso Desing Grafico Post Instagram</span>  
+              <span class="imagem-outros-info2"> Curso Desing Grafico Video Instagram</span>  
+              <span class="imagem-outros-info3"> Blog Perssoal</span>      
             </div>
           </div>
          </div>
@@ -79,20 +90,33 @@
 
         <!-- Rodape-->
     <footer class="rodape">  
-        <h1 class="titulo-contacto">Contacta-me</h1>
-        <form>
-            <input type="text" name="nome" placeholder="Nome Completo">
-            <input type="text" email="email" placeholder="Seu E-mail">
-            <input type="text" email="telefone" placeholder="Telefone">
-            <textarea name="mensagem" placeholder="Escreva sua mensagem aqui"></textarea>        
-            <input type="button" value="Enviar" id="boton">
+         <form action="" id ="formulario"> 
+            <h1 class="titulo-contacto" id="Contacta-me">Contacta-me</h1>
+        <div>
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" >
+        </div>
+        <div>
+            <label for="email">Seu E-mail</label>
+            <input type="text" id ="email">
+        </div>
+        <div>
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone">
+        </div>
+        <div>
+            <label for="E-mail">Escreva sua mensagem aqui</label>
+            <textarea name="mensagem"></textarea>        
+        </div>
+            <input type="submit" value= "Enviar">
         </form>
+        <div id= 'error'></div>
     </footer>
     
         <div class="copy">
             <p class="copy-info">Elaborado por Rina Velasquez &copy; Julio 2021</p></div>
     </section>
     
-  
+  <script src="form.js"></script>
 </body>
 </html>
