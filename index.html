@@ -7,7 +7,13 @@
     <title>Portafolio Css</title>      
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
-   
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>    
     
@@ -20,21 +26,21 @@
         </ul>
     </div>
     <!-- Menu-->
-    <header>`
+    <header id="temario">`
           <nav class="menu-navegacao container">
               
             <ul class="enlaces"> 
-               <li><a href="#Quem sou">Quem Sou</a></li>
+               <li><a href="#Quem Sou">Quem Sou</a></li>
                <li><a href="#Meu Projetos">Meu Projetos</a></li>
                <li><a href="#Outros Projetos">Outros Projetos</a></li>
                <li><a href="#Contacta-me">Contacta-me</a></li>
-           </ul>
-         </nav> 
+               </ul>
+          </nav> 
          <section class="apresentacao">
     <div class="container-texto container">
         <p class="apresentacao-item1">Olá,</p>
-        <p class="apresentacao-item2">Eu sou RINA VELASQUEZ,</p>
-        <p class="apresentacao-item3">Estudante do Web Developer FRONT END.</p>
+        <h1 class="apresentacao-item2">Eu sou RINA VELASQUEZ,</h1>
+        <p class="apresentacao-item3">Sou Developer FRONTEND Junior.</p>
     </div>
     </section>
     </header>    
@@ -44,10 +50,10 @@
      <!-- Conteudo principal-->
 <main>
      <section class="conteiner">
-     <div class="conteudo-sobre">
-         <img src="img/rinvel0.png"  class="imagem__1" alt="">
+     <div id="Quem Sou"class="conteudo-sobre">
+         <img src="img/rina0.jpg"  class="imagem__1" alt="">
          <div class="texto-sobre">
-             <h1 class="titulo" id="Quem Sou">Quem Sou</h1>
+             <h2 class="titulo" id="Quem Sou">Quem Sou</h2>
              <p>Olá, meu nome é RINA VELASQUEZ, sou venezuelana,atualmente moro em Manaus-Brasil.</p>
              <P> Estude Administrão Financeira, mas hoje, empreendo novos rumos:</P>
              <p>Eu estudou o desenvolvimento de uma página web.</p>
@@ -55,21 +61,30 @@
              <p>E assim torne a experiência do usuário, a melhor possível.</p>
          </div>
         </div>
-    </section>
+    </section> 
+    <a href="index.html#temario"><span class="material-icons">
+        arrow_circle_up
+        </span></a>
 </main>
 
     <!-- projetos -->
      <section class="projetos">
             <div class="container">
             <h2 class="titulo" id="Meu Projetos"> Meu Projetos</h2>
-            <p class="descricao">Elaboraçao do Templete, para o aplicação de comandos e códigos HTML</p>
+           
                 <div class="conteiner-imagem">
-                <a href="https://github.com/rinvel7/Ejerc06-TEMPLETE1">
-                <img src="img/Prac. Templete.png" width="400px" alt="foto-templete-pratica" class="Imagem__2"></a> 
-                <button class="boton"><a href="https://rinvel7.github.io/Ejerc06-TEMPLETE1/"> <p>PRENCHA AQUI</p> </a></button>  
+                <a href="https://rinvel7.github.io/Ejerc06-TEMPLETE1/">
+                <img src="img/templete.png" width="400" alt="foto-templete-pratica" class="Imagem-2"></a> 
+                 <a href="https://rinvel7.github.io/Calculadora">
+                <img src="img/calculador.jpeg" width="285" alt="Calculadora" class="Imagem-3"></a> 
+                <a href="https://github.com/rinvel7/Cars">
+                <img src="img/projeto.jpeg" width="400" height="370" alt="Cars Turismo" class="Imagem-4"></a> 
+           
              </div>  
-        </section>
-
+            </section>
+            <a href="index.html#temario"><span class="material-icons">
+                arrow_circle_up
+                </span></a>
          <!-- outros-->
        <section class="outros">
            <div class="outros-Mais">
@@ -87,11 +102,13 @@
           </div>
          </div>
         </Section>
-
+        <a href="index.html#temario"><span class="material-icons">
+            arrow_circle_up
+            </span></a>
         <!-- Rodape-->
     <footer class="rodape">  
-         <form action="" id ="formulario"> 
-            <h1 class="titulo-contacto" id="Contacta-me">Contacta-me</h1>
+         <form action="" id="formulario"> 
+            <h2 class="titulo-contacto" id="Contacta-me">Contacta-me</h2>
         <div>
             <label for="nome">Nome Completo</label>
             <input type="text" id="nome" >
@@ -116,7 +133,9 @@
         <div class="copy">
             <p class="copy-info">Elaborado por Rina Velasquez &copy; Julio 2021</p></div>
     </section>
-    
+    <a href="index.html#temario"><span class="material-icons">
+        arrow_circle_up
+        </span></a>
   <script src="form.js"></script>
 </body>
 </html>
