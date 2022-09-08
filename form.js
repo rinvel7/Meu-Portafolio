@@ -22,7 +22,41 @@ var form = document.getElementById('formulario');
 
         error.innerHTML =  mensajesError.join(', ');
     });
-       
+
+    var link1 = document.getElementById('.trassi')
+    var link2 = document.getElementById('.ire')
+
+    function urlTrassi() {
+        var link1 = document.getElementById('.trassi')
+      }
+
+      
+        /* slider - tecologia   */
+        $(document).ready(function(){
+            $('.slide-track').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    
+
+      
 
 
 

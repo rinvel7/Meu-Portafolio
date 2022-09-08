@@ -52,9 +52,8 @@
 
 body {
     background-color: rgb(252, 250, 248);
-   
+     
 }
-
 
 p {
    
@@ -62,8 +61,18 @@ p {
     max-block-size: 100%;
 }
 
+a {
+    color:white;
+    font-weight: bold;
+}
 
-/* Menu */
+.material-icons{
+    color:rgb(141, 96, 29);
+  
+    padding: 15px;
+}
+
+/* ---------------------------------------------Menu---------------------------------------------- */
 
 .menu-navegacao {
     padding: 0;
@@ -97,11 +106,11 @@ p {
 
 .apresentacao {
     height: 550px;
-    background-image: url(img/contacto.jpg) ;
+    background-image: url(assets/contacto.jpg) ;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);     
+    box-shadow: 2px 2px 12px rgba(0,0,0,1);     
 }
 
 .container-texto {
@@ -115,7 +124,7 @@ p {
 }
 
 .container-texto:hover {
-    background-color: rgb(174, 177, 179); 
+    background-color: rgba(174, 177, 179, 0.2); 
 }
 .apresentacao-item1 {
     margin: 30px;
@@ -124,7 +133,7 @@ p {
     color: rgb(141, 100, 39);;
 }
 .apresentacao-item2 {
-    margin: 40px;
+    margin: 30px;
     font-size: 70px;  
     color: rgb(141, 96, 29);
     
@@ -135,10 +144,10 @@ p {
     color: rgb(141, 100, 39);;
 }
 
-/*conteudo Principal*/
+/*------------------------------------------------conteudo Principal--------------------------------*/
 
 .titulo {
-    margin: 20px;
+    margin: 30px;
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
@@ -164,37 +173,123 @@ p {
     background: rgb(218, 214, 214);
 }
 
-/*projetos*/
+/*----------------------------------------------------projetos-------------------------------------*/
 
-.projetos {
-    background-color:rgb(218, 214, 214);
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.5); 
- 
+.container-cards {
+    display: flex;
+    transform-style: preserve-3d;
+    color:#fff
 }
 
-.conteiner-imagem {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   align-content: center;
+.container-cards .flip-card__inner {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.container-cards .flip-card__inner .flip-card__inner__front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.9s ease;
+}
+
+.container-cards .flip-card__inner .flip-card__inner__front .flip-card__inner__front--img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.container-cards .flip-card__inner .flip-card__inner__front .flip-card__inner__front--img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    object-fit: contain;
+}
+
+.container-cards .flip-card__inner .flip-card__inner__front .flip-card__inner__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(124, 120, 120);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.container-cards .flip-card__inner:hover .flip-card__inner__front {
+    transform: rotateY(180deg);
+}
+
+.container-cards .flip-card__inner .flip-card__inner__front .flip-card__inner__back div {
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: rgb(141, 96, 29);
+    transform: translateZ(100px);
+}
+
+.container-cards .flip-card__inner .flip-card__inner__front .flip-card__inner__back div {
+    letter-spacing: 1px;
+}
+
+.flip-card__inner__front--title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    line-height: 45px;
+    background: rgb(141, 96, 29);
+    text-align: center;
+}
+
+.flip-card__inner__back {
+    font-size: 0.8rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: left;
+}
+
   
-}
+  
+  .projetos {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background: rgb(212, 203, 188);;
+    animation: b 9s infinite;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+  }
+  
 
-.imagem-2 {
-    width: "1rem";
-    height: "-0.5rem";
-}
-
-
-/* outros Proyectos*/
-
+ 
+/*---------------------------------------- outros Projectos----------------------------------------*/
 .outros {
-    padding: 30px;
+    padding: 50px;
     background-color: #B3A298;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.5);  
 }
 
 .imagem-outros {
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -217,7 +312,7 @@ p {
 .imagem-outros-info1 {
     position: relative;
     top: 10px;
-    right: 50px;
+    right: 0px;
 }
 
 .imagem-outros-info2 {
@@ -229,24 +324,143 @@ p {
 .imagem-outros-info3 {
     position: relative;
     top: 10px;
-    left:20px;
+    left:0px;
 }
-/*Formulario*/
+
+/*-----------------------------------------Slider-Tecnology---------------------------------------*/
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/*---------------------------------------------Formulario------------------------------------------*/
 footer {
-    background-image: url(img/contacto.jpg);
+    background-image: url(assets/contacto.jpg);
     background-size: cover;
     background-attachment: fixed;
-    margin: 0px;
+    margin-top: 0px;
     height: 550px;
     box-shadow: rgba(0,0,0,0.5);
 }
 
 form {
-    width: 450px;
+    width: 550px;
     margin: auto;
     background:  rgba(0,0,0,0.4);
     padding: 10px 20px;  
-    margin-top: 20px;
+    margin-top: 0px;
     border-radius: 7px; 
     color:white 
 }
@@ -287,8 +501,13 @@ textarea {
 }
 
 .copy-info {
-    color: blanchedalmond;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight:lighter;
+    padding-top: 10px;
 }
+
 @media (max-width:480px) {
     form {
         width: 100%;

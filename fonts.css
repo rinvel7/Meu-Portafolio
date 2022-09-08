@@ -37,6 +37,9 @@
 .icon-linkedin:before {
   content: "\eac9";
 }
+.icon-github:before {
+  content: "\e900";
+}
 
 .material-icons {
   font-family: 'Material Icons';
