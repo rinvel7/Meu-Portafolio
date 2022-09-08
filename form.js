@@ -1,3 +1,4 @@
+//******************************//**Formulario**************************************
 var nome = document.getElementById('nome');
 var email = document.getElementById('email');
 var telefone = document.getElementById('telefone');
@@ -31,7 +32,7 @@ var form = document.getElementById('formulario');
       }
 
       
-        /* slider - tecologia   */
+//**************************** slider - tecologia*****************************
         $(document).ready(function(){
             $('.slide-track').slick({
                 slidesToShow: 6,

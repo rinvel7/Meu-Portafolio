@@ -1,13 +1,23 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
+   font-family: 'Raleway', sans-serif;
     text-decoration: none;
     box-sizing: border-box;
     line-height: 25px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 
+}
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
 }
 
 .social {
@@ -44,6 +54,7 @@
 
 .container {
     width: 100%;
+    height: 100%;
     max-width: 1200px;
     margin:auto;
     overflow: hidden;
@@ -56,7 +67,7 @@ body {
 }
 
 p {
-   
+
     text-align: center;
     max-block-size: 100%;
 }
@@ -178,7 +189,10 @@ a {
 .container-cards {
     display: flex;
     transform-style: preserve-3d;
-    color:#fff
+    color:#fff;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .container-cards .flip-card__inner {
@@ -186,6 +200,8 @@ a {
     width: 300px;
     height: 300px;
     margin: 20px;
+    max-width: 100%;
+    max-height: 100%;
     transform-style: preserve-3d;
     perspective: 1000px;
     cursor: pointer;
@@ -280,6 +296,125 @@ a {
   }
   
 
+/*-----------------------------------------Slider-Tecnology---------------------------------------*/
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 80%;
+   
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+    
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
  
 /*---------------------------------------- outros Projectos----------------------------------------*/
 .outros {
@@ -325,124 +460,6 @@ a {
     position: relative;
     top: 10px;
     left:0px;
-}
-
-/*-----------------------------------------Slider-Tecnology---------------------------------------*/
-/* Slider */
-
-.slick-slide {
-    margin: 0px 20px;
-}
-
-.slick-slide img {
-    width: 100%;
-}
-
-.slick-slider
-{
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list
-{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
-
-.slick-slide
-{
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-}
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
 }
 
 /*---------------------------------------------Formulario------------------------------------------*/
@@ -514,9 +531,57 @@ textarea {
     }
 }
 
-@media  (max-width:800px) {
+@media  (max-width:740px) {
+    .enlaces {
+       text-align: center;
+       font-size: 10px;
+   }
+   .conteudo-sobre {
+    
+    margin: 20px;
+    padding-right: 25px;
+    width: 100%;
+    height: 800px;
+    display: block;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+   
+    .container-cards {
+        display: block;                
+    }
+
+    .apresentacao-item2 {
+        font-size: 40px;
+        padding-left: 20px;
+        text-align: center;
+       line-height: initial;
+
+    }
+    .apresentacao-item3 {
+        font-size: 20px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .slick-slide img {
+        
+        height: inherit;
+       
+    }
+    .imagem-outros-info1, .imagem-outros-info3 {
+        text-align: center;        
+    }
+    .imagem-outros-info2 {
+        text-align: center;
+        padding-left: 30px ;
+    }
 
 }
+
+
 
 
 
