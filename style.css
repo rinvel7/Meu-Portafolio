@@ -299,9 +299,90 @@ a {
   
 
 /*-----------------------------------------Slider-Tecnology---------------------------------------*/
+
+.slide-track {
+    width: 100%;
+    height: 400px;
+    margin-top: 160px;
+    background-image: url(assets/silhouette-woman);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 40%;
+   
+}
+
+.tecnology .titulo {
+    margin-bottom: 30px;
+}
+
+.item {
+  position: absolute;
+}
+
+.slide1 {
+    top: -130px;
+    right: 25%;
+   
+}
+
+.slide2 {
+    top: 0px;
+    left: 75%;
+}
+
+.slide3 {
+    top: 10px;
+    right: 48%;
+  }
+  
+  .slide4 {
+    top: 195px;
+    left: 75%;
+  }
+  
+  .slide5 {
+    top: 240px;
+    right: 51%;
+  }
+
+  /*shake*/
+  @keyframes item {
+    10%,
+    90% {
+      transform: translate(-1px, 0);
+    }
+  
+    20%,
+    80% {
+      transform: translate(2px, 0);
+    }
+  
+    30%,
+    50%,
+    70% {
+      transform: translate(-4px, 0);
+    }
+  
+    40%,
+    60% {
+      transform: translate(4px, 0);
+    }
+  }
+  
+  .item {
+    font-size: 5vw;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .item:hover {
+    animation: item 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate(0, 0);
+  }
+
 /* Slider */
 
-.slick-slide {
+/* .slick-slide {
     margin: 0px 20px;
 }
 
@@ -416,7 +497,7 @@ a {
 .slick-arrow.slick-hidden {
     display: none;
 }
-
+ */
  
 /*---------------------------------------- outros Projectos----------------------------------------*/
 .outros {
@@ -568,10 +649,40 @@ textarea {
         text-align: center;
     }
 
-    .slick-slide img {
-        
-        height: inherit;
+    .slide-track {
+        width: 100%;
+        height: 200px;
+    }
+
+    .item img {
+        width: 90%;
+        height: fit-content;       
        
+    }
+    .slide1 {
+        top: -90px;
+        right: 28%;
+    
+    }
+
+    .slide2 {
+        top: -20px;
+        left: 80%;
+    }
+
+    .slide3 {
+        top: -20px;
+        right: 65%;
+    }
+    
+    .slide4 {
+        top: 65px;
+        left: 85%;
+    }
+    
+    .slide5 {
+        top: 70px;
+        right: 60%;
     }
     .imagem-outros-info1, .imagem-outros-info3 {
         text-align: center;        
